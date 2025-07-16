@@ -11,3 +11,6 @@ Route::put('/admin/pengaduan/{id}/status', [PengaduanController::class, 'updateS
 
 Route::get('/admin/pengaduan/fetch', [PengaduanController::class, 'fetch']);
 
+Route::get('/', function () {
+    return redirect('/pengaduan');
+});
